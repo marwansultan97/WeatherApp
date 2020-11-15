@@ -120,6 +120,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm a"
         time.text = dateFormatter.string(from: date)
+        print("nice")
     }
 
     
