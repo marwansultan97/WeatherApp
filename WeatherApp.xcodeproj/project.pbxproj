@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1EECDC2562027600B5D08A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1EECDB2562027600B5D08A /* MapViewController.swift */; };
 		CBF9A1582556369C004D1BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9A1572556369C004D1BD4 /* AppDelegate.swift */; };
 		CBF9A15A2556369C004D1BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9A1592556369C004D1BD4 /* ViewController.swift */; };
 		CBF9A15D2556369C004D1BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF9A15B2556369C004D1BD4 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB1EECDB2562027600B5D08A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CBF9A1542556369C004D1BD4 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF9A1572556369C004D1BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF9A1592556369C004D1BD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CBF9A1602556369D004D1BD4 /* LaunchScreen.storyboard */,
 				CBF9A1632556369D004D1BD4 /* Info.plist */,
 				CBF9A16D25578D46004D1BD4 /* ApiService.swift */,
+				CB1EECDB2562027600B5D08A /* MapViewController.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF9A170255892A6004D1BD4 /* WeatherViewModel.swift in Sources */,
+				CB1EECDC2562027600B5D08A /* MapViewController.swift in Sources */,
 				CBF9A15A2556369C004D1BD4 /* ViewController.swift in Sources */,
 				CBF9A16C255639EA004D1BD4 /* WeatherModel.swift in Sources */,
 				CBF9A16E25578D46004D1BD4 /* ApiService.swift in Sources */,

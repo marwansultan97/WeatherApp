@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -35,8 +36,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var humidityIcon: UIImageView!
     
-    
     @IBOutlet weak var weatherState: UILabel!
+    
+    
+    @IBOutlet weak var locationButton: UIButton!
+    
+    @IBOutlet weak var locationLabel: UILabel!
     
         
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -120,7 +125,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm a"
         time.text = dateFormatter.string(from: date)
-        print("nice")
     }
 
     
@@ -143,6 +147,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.humidityPercent.text = ""
         self.humidityIcon.image = nil
         self.windIcon.image = nil
+        self.locationButton.isHidden = true
+        self.locationLabel.text = ""
 
     }
     
@@ -163,6 +169,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.humidityPercent.text = "\(weather.main.humidity)%"
             self.humidityIcon.image = UIImage(named: "humidity")
             self.windIcon.image = UIImage(named: "wind")
+            self.locationButton.isHidden = false
+            self.locationLabel.text = "My Location"
             self.showFullDate()
             self.showTime()
         }
