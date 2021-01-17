@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tmp-lj-I5E">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="EuA-aM-Ury">
+            <objects>
+                <viewController id="Tmp-lj-I5E" customClass="LaunchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8hS-in-5vU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-sun" translatesAutoresizingMaskIntoConstraints="NO" id="y2N-1U-dCY">
+                                <rect key="frame" x="16.5" y="204" width="160" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="mtl-e3-VMX"/>
+                                    <constraint firstAttribute="height" constant="130" id="zRq-lw-diR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-cloud" translatesAutoresizingMaskIntoConstraints="NO" id="fP3-de-U03">
+                                <rect key="frame" x="237.5" y="236" width="160" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Vwl-Wb-63L"/>
+                                    <constraint firstAttribute="width" constant="160" id="tr6-3W-wwZ"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLV-yq-reA">
+                                <rect key="frame" x="206.5" y="198" width="1" height="500"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="FzG-7Y-nlb"/>
+                                    <constraint firstAttribute="width" constant="1" id="oLh-sS-335"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJw-eu-VN0">
+                                <rect key="frame" x="82" y="428" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5Gk-FF-L4g"/>
+                                    <constraint firstAttribute="height" constant="40" id="PNj-cv-bq5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6rB-ds-ejQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tJw-eu-VN0" firstAttribute="centerX" secondItem="8hS-in-5vU" secondAttribute="centerX" id="HA2-4k-Ncm"/>
+                            <constraint firstItem="fP3-de-U03" firstAttribute="top" secondItem="6rB-ds-ejQ" secondAttribute="top" constant="192" id="M09-rH-Gn7"/>
+                            <constraint firstItem="y2N-1U-dCY" firstAttribute="top" secondItem="6rB-ds-ejQ" secondAttribute="top" constant="160" id="Meh-0H-e9m"/>
+                            <constraint firstItem="tJw-eu-VN0" firstAttribute="centerY" secondItem="8hS-in-5vU" secondAttribute="centerY" id="Qlt-fv-bIM"/>
+                            <constraint firstItem="hLV-yq-reA" firstAttribute="centerY" secondItem="8hS-in-5vU" secondAttribute="centerY" id="TX7-sW-W4J"/>
+                            <constraint firstItem="hLV-yq-reA" firstAttribute="leading" secondItem="y2N-1U-dCY" secondAttribute="trailing" constant="30" id="Ws2-Fe-g46"/>
+                            <constraint firstItem="fP3-de-U03" firstAttribute="leading" secondItem="hLV-yq-reA" secondAttribute="trailing" constant="30" id="fKq-k5-nFP"/>
+                            <constraint firstItem="hLV-yq-reA" firstAttribute="centerX" secondItem="8hS-in-5vU" secondAttribute="centerX" id="qK2-OJ-YYw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cloudImage" destination="fP3-de-U03" id="Mic-km-5rH"/>
+                        <outlet property="sunImage" destination="y2N-1U-dCY" id="56v-vx-fRP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rR4-iB-dTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-cloud" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icons8-sun" width="32" height="32"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
